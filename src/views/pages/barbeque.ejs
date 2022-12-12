@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link  rel="stylesheet"  type="text/css" href="/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body style="background: linear-gradient(rgba(0,0,0,0.80),rgba(0,0,0,0.80)),url('/images/bon.jpg');height:620px ">
+    <div class="block4">
+
+        <h2 style="margin:10px 0px 20px 150px;font-family:sans-serif;padding-top:25px;">Book a Table </h2><hr style="margin:20px 15px 20px 15px ;">
+        <p style="font-size: 25px;margin-left:15px;">You are making a reservation at <b>Barbeque Nation </b> :</p>
+        <i class="large material-icons" style="color: black;margin-left:100px;margin-top:-50px">fmd_good</i><p style="color:black;margin-left:130px;margin-top:-25px;">Nungambakkam, Chennai</p><br>
+        <i class="large material-icons" style="color: black;margin-left:100px;margin-top:-900px">access_time</i><p style="color:black;margin-left:130px;margin-top:-25px;">Open from 11:00 AM - 04:30 PM</p><br>
+        <i class="large material-icons" style="color: black;margin-left:100px;padding-top:-900px">currency_rupee</i><p style="color:black;margin-left:130px;margin-top:-25px;">1800 for two approx | Multicuisine Barbeque</p>
+        <form action="/confirm" method="POST">
+        <h3 style="margin:30px 0px 20px 13px;font-family:sans-serif;border:none;">Name</h3>
+        <input type="text" name="name" id="n1" placeholder="enter your name"style="margin-left:20px;width:450px;border:none;height:50px;font-size:20px;">  
+        <hr style="margin:0px 15px 20px 15px ;"> 
+
+        <h3 style="margin:30px 0px 20px 13px;font-family:sans-serif;border:none;">Phone number</h3>
+        <input type="text" name="phone" id="p1" placeholder="enter your phone number"style="margin-left:20px;width:450px;border:none;height:50px;font-size:20px;">  
+        <hr style="margin:0px 15px 20px 15px ;"> 
+        
+        <h3 style="margin:30px 0px 20px 13px;font-family:sans-serif">Party Size</h3>
+        <select name="people" id="people" style="margin-left:20px;width:450px;border:none;height:50px;">
+            <option value="1">1 Person</option>
+            <option value="2">2 People</option>
+            <option value="3">3 People</option>
+            <option value="4">4 People</option>
+            <option value="5">5 People</option>
+            <option value="6">6 People</option>
+            <option value="7">7 People</option>
+            <option value="8">8 People</option>
+            <option value="9">9 People</option>
+            <option value="10">10 People</option>
+            <option value="11">11 People</option>
+            <option value="12">12 People</option>
+            <option value="13">13 People</option>
+            <option value="14">14 People</option>
+            <option value="15">15 People</option>
+          </select>
+          <hr style="margin:0px 15px 20px 15px ;">
+          <h3 style="margin:10px 0px 20px 13px;font-family:sans-serif;display:inline-block;">Date</h3> <h3 style="margin:10px 15px 20px 230px;font-family:sans-serif;display:inline-block;">Time</h3><br>
+        <input type="date" data-role="calendarpicker"style="margin-left:20px;width:100px;border:none;" name="date">
+        <input type="time" id="timing" name="timing" style="margin-left:200px;width:100px;">
+        <hr style="margin:20px 15px 20px 15px ;">
+        <button class="letgo" style="width:250px;margin-left:120px;">Complete Reservation</button>
+        </form>
+    </div>
+</body>
+</html>

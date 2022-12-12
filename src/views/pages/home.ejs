@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/design/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script
+        src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+        crossorigin="anonymous"></script>
+        <!--<script>
+          $(function(){
+              $('#header').load('header.html');
+          });
+      </script>-->
+    </head>
+    <body>
+       <!-- <div id="header"></div>-->
+       <header>
+        <%- include('../partials/header'); %>
+      </header>
+        <div class="title">
+          <h1><span></span></h1>
+        </div>
+        <div class="block1" style="background: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)),url('/images/sunset\ grill.png');background-repeat:no-repeat ;background-size:cover;" >
+          <h2 style="color:white;font-size:50px;padding-top:50px; padding-left:60px">Sunset Grill</h2>
+          <i class="large material-icons" style="color: white;margin-left:100px;margin-top:-50px">fmd_good</i><p style="color:white;margin-left:130px;margin-top:-25px;">The Westin Chennai Velachery</p><br>
+          <i class="large material-icons" style="color: white;margin-left:100px;margin-top:-900px">access_time</i><p style="color:white;margin-left:130px;margin-top:-25px;">Open from 07:00 PM - 11:00 PM</p><br>
+          <i class="large material-icons" style="color: white;margin-left:100px;padding-top:-900px">currency_rupee</i><p style="color:white;margin-left:130px;margin-top:-25px;">2500 for two approx | European Barbeque</p>
+          <div class="vl"></div>
+          <div class="about">
+            <h2 style="font-family:'Times New Roman', Times, serif"><u>ABOUT</u></h2>
+
+            <p style="color:white;padding:30px;font-size:larger;margin-top:-10px;">Sunset Grill perched right on the rooftop of the posh hotel The Westin opens after the sun sets You can sit by<br><br>  the ledge, which faces the Guindy forest and feel some fresh breeze touching your skin .
+              The beautiful alfresco <br><br> restaurant has an inimitable aura as the sea breeze swirls the palms lined up on the sides. The beautiful <br><br> ambienceisi highlighted with lovely display of dim lights.
+              The ambiance of the entire place is absolutely<br><br> fascinating.
+              You can have an intimate dinner with your friend on the terrace and listen to the strains of soft<br><br> music and sip the best of the wines or chilled Apple Mojito or tangy Valencia orange in attractively presented<br><br> sparkling glasses.</p>
+          </div> 
+          <button class="Hbuttons" style="border-radius:5px;padding:10px; margin:50px 180px;" type="submit" onclick="book_sunset();">BOOK TABLE</button>
+        </div>
+        
+        <div class="block1" style="background: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)),url('/images/nation.jpg');background-repeat:no-repeat ;background-size:cover;">
+          <h2 style="color:white;font-size:50px;padding-top:50px; padding-left:60px">Barbeque Nation</h2>
+          <i class="large material-icons" style="color: white;margin-left:100px;margin-top:-50px">fmd_good</i><p style="color:white;margin-left:130px;margin-top:-25px;">Nungambakkam, Chennai</p><br>
+          <i class="large material-icons" style="color: white;margin-left:100px;margin-top:-900px">access_time</i><p style="color:white;margin-left:130px;margin-top:-25px;">Open from 11:30 AM - 04:30 PM</p><br>
+          <i class="large material-icons" style="color: white;margin-left:100px;padding-top:-900px">currency_rupee</i><p style="color:white;margin-left:130px;margin-top:-25px;"> 1800 for two approx | Multicuisine Barbeque</p>
+          <div class="vl"></div>
+          <div class="about">
+            <h2 style="font-family:'Times New Roman', Times, serif"><u>ABOUT</u></h2>
+            <p style="color:white;padding:30px;font-size:larger;margin-top:-10px;">One of the key pleasures of dining at a family style restaurant is the immense splurge of food available at your<br><br>  service. If you are fussy and like a huge variety then these kind of eateries are your best bet. Not only you can <br><br> 
+              dip and dig at some delicious dishes from all over the world but you also can indulge to your heart’s content.<br><br>  Chennai is crawling with truly amazing family-style eateries but topping the list is one name that has become <br><br> synonymous to family eateries everywhere in the country, ‘Barbeque Nation’. This pioneering brand has <br><br> 
+              opened hundreds of outlets all over the nation and Chennai alone boasts of about five outposts.</p>
+          </div> 
+          <button class="Hbuttons" style="border-radius:5px;padding:10px; margin:50px 180px;" onclick="book_barbeque();">BOOK TABLE</button>
+        </div>
+        <div class="block1" style="background: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)),url('/images/cabana.png');background-repeat:no-repeat ;background-size:cover;">
+          <h2 style="color:white;font-size:50px;padding-top:50px; padding-left:60px">La Cabana</h2>
+          <i class="large material-icons" style="color: white;margin-left:100px;margin-top:-50px">fmd_good</i><p style="color:white;margin-left:130px;margin-top:-25px;">The Hotel Park Elanza, Chennai</p><br>
+          <i class="large material-icons" style="color: white;margin-left:100px;margin-top:-900px">access_time</i><p style="color:white;margin-left:130px;margin-top:-25px;">Open from 5:30 PM - 11:00 PM</p><br>
+          <i class="large material-icons" style="color: white;margin-left:100px;padding-top:-900px">currency_rupee</i><p style="color:white;margin-left:130px;margin-top:-25px;"> 1500 for two approx | Chinese Desserts Finger Food </p>
+          <div class="vl"></div>
+          <div class="about">
+            <h2 style="font-family:'Times New Roman', Times, serif"><u>ABOUT</u></h2>
+            <p style="color:white;padding:30px;font-size:larger;margin-top:-10px;">La Cabana is an amazing restaurant and bar located in Hotel Park Elanza in Chennai. People usually step into<br><br> 
+              this outstanding eating place to indulge in some finger food. The place is closed during morning hours and you <br><br>can have a meal only by 6.00 PM. You get an extensive range of single malts, Scotch whisky, vodkas, gin and<br><br>
+               wines at the bar. Any connoisseur of these liqueurs will be happy to visit La Cabana. For starters, you can order<br><br> 
+               Tawa Machli, Hariyali Fish Tikka, Papdi Roll, Kabuli Pudina Paneer, Barbeque Chicken Seekh, Murgh Shola<br><br> Kebab etc. This place is quite popular among the locals and the tourists for its mouth watering food. The food is<br><br>
+                in fact prepared by making use of the choicest of ingredients. In fact to add to the mood live music is played so<br><br> that the guests feel happy.</p>
+          </div> 
+          <button class="Hbuttons" style="border-radius:5px;padding:10px; margin:50px 180px;" onclick="book_lacabana();">BOOK TABLE</button>
+        </div>
+
+        <div class="block1" style="background: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)),url('/images/kabab.jpg');background-repeat:no-repeat ;background-size:cover;">
+          <h2 style="color:white;font-size:50px;padding-top:50px; padding-left:60px;font-size:40px">The Great Kabab Factory</h2>
+          <i class="large material-icons" style="color: white;margin-left:100px;margin-top:-50px">fmd_good</i><p style="color:white;margin-left:130px;margin-top:-25px;">Radisson Blu, Egmore</p><br>
+          <i class="large material-icons" style="color: white;margin-left:100px;margin-top:-900px">access_time</i><p style="color:white;margin-left:130px;margin-top:-25px;">Open from 12:30 PM - 3:00 PM</p><br>
+          <i class="large material-icons" style="color: white;margin-left:100px;padding-top:-900px">currency_rupee</i><p style="color:white;margin-left:130px;margin-top:-25px;"> 3000 for two approx | North Indian</p>
+          <div class="vl"></div>
+          <div class="about">
+            <h2 style="font-family:'Times New Roman', Times, serif"><u>ABOUT</u></h2>
+            <p style="color:white;padding:30px;font-size:larger;margin-top:-10px;">For a city unfamiliar with kababs, The Great Kabab Factory (TGKF) brand has become an initiation of sorts<br><br>  carving a niche in Chennai for it is unlimited kabab-focussed price fixed menu. At the Radisson Blu Egmore, it<br><br>  
+              is brighter, bigger and more familiar than the sleek business-class GST Road outpost. The kabab’s, like TGKF<br><br>  everywhere, remain resolutely standardised.</p>
+          </div> 
+          <button class="Hbuttons" style="border-radius:5px;padding:10px; margin:50px 180px;"onclick="book_kabab();">BOOK TABLE</button>
+        </div>
+        <div class="block1" style="background: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)),url('/images/messages.jpeg');background-repeat:no-repeat ;background-size:cover;">
+          <h2 style="color:white;font-size:50px;padding-top:50px; padding-left:60px;font-size:40px">Message In A Bottle</h2>
+          <i class="large material-icons" style="color: white;margin-left:100px;margin-top:-50px">fmd_good</i><p style="color:white;margin-left:130px;margin-top:-25px;">Fortel, Chennai</p><br>
+          <i class="large material-icons" style="color: white;margin-left:100px;margin-top:-900px">access_time</i><p style="color:white;margin-left:130px;margin-top:-25px;">Open from 11:30 AM - 12:00 AM</p><br>
+          <i class="large material-icons" style="color: white;margin-left:100px;padding-top:-900px">currency_rupee</i><p style="color:white;margin-left:130px;margin-top:-25px;"> 1200 for two approx | Finger Food</p>
+          <div class="vl"></div>
+          <div class="about">
+            <h2 style="font-family:'Times New Roman', Times, serif"><u>ABOUT</u></h2>
+            <p style="color:white;padding:30px;font-size:larger;margin-top:-10px;">Message in a bottle is a great restobar at Fortel Hotel, Egmore with a good vibing music played by the DJ over<br><br> there. 
+              This is one of the best restobars I've been and a must visit in Chennai I'd say perhaps. The price was<br><br> reasonable and you could save more if you have a Zomato pro or a dineout membership. The ambience was<br><br>
+               great, the food was good and vibe was a huge tick from me with the chilled drinks out there. Good spot to <br><br>hangout on a weekend with friends for a casual drink and eat . The place is usually filled in the weekends.</p>
+          </div> 
+          <button class="Hbuttons" style="border-radius:5px;padding:10px; margin:50px 180px;"onclick="book_message();">BOOK TABLE</button>
+        </div>
+    </body>
+</html>

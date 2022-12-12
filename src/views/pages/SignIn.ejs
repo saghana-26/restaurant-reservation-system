@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%=title%></title>
+        <link  rel="stylesheet"  type="text/css" href="/design/style.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="600px.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+  <!--<script>
+    $(function(){
+        $('#header').load('header.html');
+    });
+</script>-->
+<script src="/javascirpt/working.js"></script>
+    </head>
+    <body >
+        <header>
+            <%- include('../partials/header'); %>
+          </header>
+  <div class="block3"style="background: linear-gradient(rgba(0,0,0,0.80),rgba(0,0,0,0.80)),url('/images/choose.jpeg');height:900px;margin:-10px -8px; ">
+    <form class="register" action="/home" method="POST">
+        <h3>SIGN UP TO CONTINUE</h3><br><br>
+        <input name="username"class="input-block2" id="name" placeholder="enter your name"><br>
+        <span id="s1" style="color:red;"></span><br><br>
+        <input name="number"class="input-block2" id="num" placeholder="enter your phone number"><br>
+        <span id="s6" style="color:red;"></span><br><br>
+        <input name="email"class="input-block2" id="mail" placeholder="enter email-id"><br>
+        <span id="s3" style="color:red;"></span><br><br>
+        <input type="password" name="pd"class="input-block2" id="pass" placeholder="enter the password"><br>
+        <span id="s5" style="color:red;"></span><br><br>
+        <input type="password"name="cpd" class="input-block2" id="con" placeholder="confirm password"><br>
+        <span id="s4" style="color:red;"></span><br><br><br><br>
+        <button type="submit" class="letgo" style="margin-top:-10px; width:150px;" onclick="signin_validation();">REGISTER</button>
+    </form>
+
+   </div>
+
+    </body>
+</html>
