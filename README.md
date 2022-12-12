@@ -6,4 +6,4 @@
 4.commit the changes in packet.json file as i uploaded it here.
 5.open a acoount in mongodb atlas.
 6. the connection file is also given .
-7. run the fproject with the command npm start
+7. run the fproject with the command npm start.
